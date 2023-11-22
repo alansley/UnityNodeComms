@@ -7,7 +7,7 @@ const expressApp = express()
 // Set the port the server will listen on
 const port = 3000
 
-// When we receive a request at `http://localhost:3000/` respond with this result
+// When we receive a request at `http://localhost:3000/` call the `SayHi` method to send a result
 expressApp.get('/', (request, result) => {
     SayHi(request, result);
 })
